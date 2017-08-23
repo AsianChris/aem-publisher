@@ -1,6 +1,6 @@
 # aem-publisher
 
-This Docker image installs [Adobe Experience Manager 6.0](http://docs.adobe.com/docs/en/aem/6-0.html), and allows it
+This Docker image installs [Adobe Experience Manager 6.x](http://docs.adobe.com/docs/en/aem/6-2.html), and allows it
 to be run within a Docker container.
 
 ## About docker-aem-publisher
@@ -9,7 +9,7 @@ to be run within a Docker container.
 
 You must copy your AEM installation media into the base directory before
 running this image. The image expects the following files within the base directory:
-* cq-publish-4503.jar
+* aem-publish-4503.jar
 * license.properties
 
 ## Usage
@@ -17,7 +17,7 @@ Create a new Dockerfile within your directory, and insert the following:
 
 ```
 # DOCKER-VERSION 1.0.1
-FROM ggotti/aem-publisher
+FROM asianchris/aem-publisher
 MAINTAINER <your_username>
 ```
 
